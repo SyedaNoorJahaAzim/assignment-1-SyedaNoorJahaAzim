@@ -107,48 +107,7 @@ class StreetDB(object):
         map_vertex = []
 
         print_vertex(vertex, map_vertex)
-
-        # print("ver: ", len(vertex))
-        # print("map_ver: ", len(map_vertex))
-
         print_edge(edge, map_vertex)
-        #
-        # print("edge: ", len(edge))
-
-        # linev1Flag = 0
-        # linev2Flag = 0
-        # edgesArrayWithIndex = []
-        # for i in range(0, len(edge)):
-        #     for k in range(0, len(vertex)):
-        #         if edge[i].src == vertex[k]:
-        #             linev1Flag = 1
-        #             edgeindex1 = k + 1
-        #         if edge[i].dst == vertex[k]:
-        #             linev2Flag = 1
-        #             edgeindex2 = k + 1
-        #     if linev1Flag == 1 and linev2Flag == 1:
-        #         edgesArrayWithIndex.append([str(edgeindex1), str(edgeindex2)])
-        #
-        # # sort edgesArrayWithIndex
-        # for i in range(0, len(edgesArrayWithIndex)):
-        #     if int(edgesArrayWithIndex[i][0]) > int(edgesArrayWithIndex[i][1]):
-        #         tmp = edgesArrayWithIndex[i][0]
-        #         edgesArrayWithIndex[i][0] = edgesArrayWithIndex[i][1]
-        #         edgesArrayWithIndex[i][1] = tmp
-        #
-        # for i in range(0, len(edgesArrayWithIndex)):
-        #     edgesArrayWithIndex[i][0] = str(int(edgesArrayWithIndex[i][0]) - 1)
-        #     edgesArrayWithIndex[i][1] = str(int(edgesArrayWithIndex[i][1]) - 1)
-        #
-        # sys.stdout.write("E {")
-        # for i in range(0, len(edgesArrayWithIndex) - 1):
-        #     tmp_str = '<' + str(edgesArrayWithIndex[i][0]) + ',' + str(edgesArrayWithIndex[i][1]) + '>,'
-        #     sys.stdout.write(tmp_str)
-        # if len(edgesArrayWithIndex) != 0:
-        #     i = len(edgesArrayWithIndex) - 1
-        #     tmp_str = '<' + str(edgesArrayWithIndex[i][0]) + ',' + str(edgesArrayWithIndex[i][1]) + '>'
-        #     sys.stdout.write(tmp_str)
-        # sys.stdout.write('}\n')
 
 
 def intersect(l1, l2):
